@@ -1,0 +1,43 @@
+/* Fondo con gradiente animado y estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+/* Título con efecto de gradiente */
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  background: linear-gradient(45deg, #ff6b6b, #fbc531, #4cd137, #00a8ff, #9c88ff);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientText 10s ease infinite;
+}
+
+@keyframes gradientText {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* Cartas de libros con efecto hover */
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+/* Botones y inputs personalizados */
+.btn {
+  font-weight: bold;
+}
+input, button {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
